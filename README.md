@@ -1,6 +1,10 @@
 # PF
 My private repo
 
+Some commands:
 
-For deploy: 
-firebase deploy --only hosting:lifidio
+    for deploy: 
+        firebase deploy --only hosting:lifidio
+
+    for build:
+        ng build --prod
