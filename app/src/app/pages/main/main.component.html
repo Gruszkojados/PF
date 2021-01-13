@@ -2,23 +2,9 @@
 
 <div class="container">
     <div class="row">
-        <div>
-            Witam
-        </div>
-    </div>
-    <div class="row">
-        <div>
-            Witam
-        </div>
-    </div>
-    <div class="row">
-        <div>
-            Witam
-        </div>
-    </div>
-    <div class="row">
-        <div>
-            Witam
+        <div *ngFor="let item of this.recsTab;" class="col-6">
+            <app-recipe [recId]=item.id></app-recipe>
+            <button (click)=removeRecipe(item.id)>del</button>
         </div>
     </div>
 </div>

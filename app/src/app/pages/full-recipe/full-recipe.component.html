@@ -1,0 +1,19 @@
+<p>full-recipe works!</p>
+
+<div class="containter">
+    <div class="row">
+        <div class="col-6">
+            <form (ngSubmit)="onSubmit()">
+                <input type="text"
+                required [(ngModel)]="itemValue" name="input">
+            </form>
+        </div>
+        <div class="col-6">
+            <div>Content from DB:</div><br>
+            <pre *ngFor="let item of items | async">
+                {{item.content}}
+                <br>
+            </pre>
+        </div>
+    </div>
+</div>
